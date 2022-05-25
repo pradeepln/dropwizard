@@ -72,6 +72,7 @@ public class ProductResource {
 	
 	//PUT+json /products/{id}
 	@PUT
+	@Consumes(MediaType.APPLICATION_JSON)
 	@Path("{id}")
 	public Response updateExisting(@PathParam("id") int pid,Product p) {
 		if(p.getId() != pid) {

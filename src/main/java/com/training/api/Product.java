@@ -3,7 +3,13 @@ package com.training.api;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Product {
-	
+
+	//	{
+//	    
+//	    "xname": "testPMTool22",
+//	    "yprice": 1233,
+//	    "qoh": 100
+//	}
 	
 	int id;
 	String name;
@@ -21,7 +27,8 @@ public class Product {
 		this.qoh = qoh;
 	}
 
-	@JsonProperty
+	// getAbcd() setAbcd() ---> abcd is a property
+	@JsonProperty 
 	public int getId() {
 		return id;
 	}
